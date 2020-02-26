@@ -1,3 +1,6 @@
+
+Guías visuales: http://pubdocs.worldbank.org/en/754991511203317714/WBG-VIG-20171114.pdf
+
 # Data Lovers
 
 ## Índice

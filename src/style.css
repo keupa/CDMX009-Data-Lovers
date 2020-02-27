@@ -1,0 +1,53 @@
+body{
+  background-color: #8AD0D6;
+}
+
+.container{
+}
+
+.logo-img{
+  display:flex;
+  background-image: url(../resources/logotipo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 400px;
+}
+
+.options-container{
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+background-color: #a2e329;
+margin-top: 100px;
+}
+
+.options-container>div{
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+width: 100px;
+background-size: 60%;
+background-repeat: no-repeat;
+}
+
+.place-icon{
+background-image: url(../resources/place.svg);
+margin-top: 45px;
+
+}
+
+.indicator-icon{
+  background-image: url(../resources/pointer.svg);
+  margin-top: 45px;
+
+}
+
+.year-icon{
+  background-image: url(../resources/calendar.svg);
+  margin-top: 45px;
+
+
+}

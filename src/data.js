@@ -1,3 +1,7 @@
+export function fetchData(){
+    console.log("funciono")
 fetch('./data/worldbank/worldbank.json')
 .then(response=>response.json())
-.then(data=>console.log(data.PER.indicators));
+.then(data=>document.querySelector('.country-data').innerHTML = JSON.stringify(data));
+
+}

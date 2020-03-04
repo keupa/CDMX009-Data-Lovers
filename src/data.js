@@ -1,10 +1,15 @@
-<<<<<<< HEAD
+
+//nodes
+   
+let select = document.querySelector('.select')
+let selectI = document.querySelector('#indicator')
+let h3 = document.querySelector('#result')
 
 
+fetch('./data/worldbank/worldbank.json')
+.then(response=>response.json())
+.then(data=>(data.PER.indicators["17"].data["1990"]));
 
-// fetch('./data/worldbank/worldbank.json')
-// .then(response=>response.json())
-// // .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
 // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
 //    .then(( data)=>{
 //        for (let i=0; i <= 138; i++) {
@@ -18,6 +23,29 @@
 //      }
 //     }
 //    )
+
+fetch('./data/worldbank/worldbank.json')
+.then(response=>response.json())
+   .then(( data)=>{
+      
+        let index1="";
+             index1= (data.PER.indicators["17"].data); 
+             console.log(Object.keys(index1));              
+           
+    }
+   )
+
+   fetch('./data/worldbank/worldbank.json')
+.then(response=>response.json())
+   .then(( data)=>{
+      
+        let index="";
+             index = (data); 
+             console.log(Object.keys(index));              
+           
+    }
+   )
+
 
    fetch('./data/worldbank/worldbank.json')
 .then(response=>response.json())
@@ -45,19 +73,19 @@
 
   fetch('./data/worldbank/worldbank.json')
   .then(response=>response.json())
-  // .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
-  // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
-     .then(( data)=>{
-         for (let x=0; x <= 57; x++) {
-          let year= 1960;
-          document.getElementById("year").innerHTML+=("<option>" + year + "<option>"); 
+  .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
+  // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
+  //    .then(( data)=>{
+  //        for (let x=0; x <= 57; x++) {
+  //         let year= 1960;
+  //         document.getElementById("year").innerHTML+=("<option>" + year + "<option>"); 
          
                
-               console.log(year+x);            
+  //              console.log(year+x);            
                           
-                  }
-      }
-     )
+    //               }
+    //   }
+    //  )
 
       // fetch('./data/worldbank/worldbank.json')
       // .then(response=>response.json())
@@ -146,17 +174,25 @@
 //     });
 
 // }
-    
-    
+select.addEventListener('change', e=>{
+  let value = e.target.value
+  h3.innerText = value
+  let country=value
 
-// // .then(data=>console.log(data.PER.indicators["17"]));
-// .then(data=>console.log(data));
-=======
-export function fetchData(){
-    console.log("funciono")
-fetch('./data/worldbank/worldbank.json')
-.then(response=>response.json())
-.then(data=>document.querySelector('.country-data').innerHTML = JSON.stringify(data));
+  fetch('./data/worldbank/worldbank.json')
+  .then(response=>response.json())
+  .then(data=>console.log((data[country].indicators["17"].data["1990"])));
+    
+})
 
-}
->>>>>>> e20fc072b5566f1e1f35b1ca5b9efaad1585def9
+selectI.addEventListener('change', e=>{
+  let valueI = e.target.value
+  h3.innerText = valueI
+  let indic=valueI
+
+  fetch('./data/worldbank/worldbank.json')
+  .then(response=>response.json())
+  .then(data=>console.log((data[country].indicators[indic].data["1990"])));
+    
+})
+ 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" >
   </head>
   <body>
 
@@ -13,10 +14,34 @@
       <div class="container">
         <div class="logo-img"></div>
         <div class="options-container">
-        <div class="place-icon"></div>
-        <div class="indicator-icon"> </div>
-        <div class="year-icon"> </div>
+        <div class="place-icon">
+          
+          <select class="select" id="pais" value="PAIS">
+            <option selected disabled>PAÍS</option> 
+            <option value="BRA">BRASIL</option>
+            <option value="CHL">CHILE</option>
+            <option value="MEX">MÉXICO</option>
+            <option value="PER">PERÚ</option>
+          </select>
         </div>
+        <div class="indicator-icon">
+          <select id="indicator" class="select"  >
+            <option selected disabled>INDICADOR</option> 
+           <script type="text/javascript">
+          </script>                       
+        </div>
+        <div class="year-icon">
+          <select id="year" class="select"  >
+            <option selected disabled>AÑO</option> 
+           <script type="text/javascript">
+          </script>   
+        </div>
+        </div>
+        <div class="text-area" id="text-area">
+          <!-- <input type="text-area" wrap="hard"  class="textArea" id="textArea" > -->
+      
+        </div>
+        <!-- <input type="button" value="cargar" id="jsonBtn"  > -->
       </div>
   </body>
   <script src="data.js"></script>

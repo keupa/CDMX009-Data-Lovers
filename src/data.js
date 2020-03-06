@@ -1,7 +1,31 @@
-export function fetchData(){
-    console.log("funciono")
+/*export function fetchData(){
+    fetch('./data/worldbank/worldbank.json')
+    .then(response=>response.json())
+    .then(data=>{var testData = JSON.stringify(data);
+    document.querySelector('.country-data').innerHTML = testData;
+
+
+    });
+}*/
+
+//nodes
+//let select = document.querySelector('.select');
+let selectI = document.querySelector('#indicator');
+var countryID = document.querySelector('.country').value;
+console.log(countryID);
+//let h3 = document.querySelector('#result');
+
+//functions
+document.addEventListener('click', getCountryIndicators);
+export function getCountryIndicators() {
 fetch('./data/worldbank/worldbank.json')
 .then(response=>response.json())
-.then(data=>document.querySelector('.country-data').innerHTML = JSON.stringify(data));
+.then((data)=>{
 
-}
+  /*let indexOfCountry = Object.keys(data);
+    let indexOfId = */
+
+
+}) //fin de fetch
+}//fin de getCountry
+//window.onload = getCountryIndicators;

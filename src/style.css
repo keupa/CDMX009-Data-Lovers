@@ -1,8 +1,18 @@
 body{
-  background-color: #8AD0D6;
+  background-color: #FFF;
 }
 
 .container{
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5em;
+  background-color: #002E54;
+  text-align: right;
 }
 
 .logo-img{
@@ -10,8 +20,9 @@ body{
   background-image: url(../resources/logotipo.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 400px;
+  height: 3em;
+  width: 13em;
+  margin: 25px 0px 0px 20px;
 }
 
 .options-container{
@@ -19,7 +30,6 @@ display:flex;
 justify-content: center;
 align-items: center;
 height: 100px;
-background-color: #a2e329;
 margin-top: 100px;
 }
 
@@ -48,6 +58,5 @@ margin-top: 45px;
 .year-icon{
   background-image: url(../resources/calendar.svg);
   margin-top: 45px;
-
 
 }

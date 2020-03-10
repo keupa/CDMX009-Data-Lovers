@@ -1,121 +1,121 @@
 
-//nodes
+// //nodes
    
-let select = document.querySelector('.select')
-let selectI = document.querySelector('#indicator')
-let h3 = document.querySelector('#result')
+// let select = document.querySelector('.select')
+// let selectI = document.querySelector('#indicator')
+// let h3 = document.querySelector('#result')
 
 
-fetch('./data/worldbank/worldbank.json')
-.then(response=>response.json())
-.then(data=>(data.PER.indicators["17"].data["1990"]));
+// fetch('./data/worldbank/worldbank.json')
+// .then(response=>response.json())
+// .then(data=>(data.PER.indicators["17"].data["1990"]));
 
+// // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
+// //    .then(( data)=>{
+// //        for (let i=0; i <= 138; i++) {
+// //         let index="";
+// //             //  index += console.log(data.PER.indicators[i].indicatorName );             
+// //            //  index += document.getElementById("text-area").innerHTML+=
+// //            document.getElementById("textArea").innerHTML+=
+// //              (data.PER.indicators[i].indicatorName );
+            
+               
+// //      }
+// //     }
+// //    )
+
+// fetch('./data/worldbank/worldbank.json')
+// .then(response=>response.json())
+//    .then(( data)=>{
+      
+//         let index1="";
+//              index1= (data.PER.indicators["17"].data); 
+//              console.log(Object.keys(index1));              
+           
+//     }
+//    )
+
+//    fetch('./data/worldbank/worldbank.json')
+// .then(response=>response.json())
+//    .then(( data)=>{
+      
+//         let index="";
+//              index = (data); 
+//              console.log(Object.keys(index));              
+           
+//     }
+//    )
+
+
+//    fetch('./data/worldbank/worldbank.json')
+// .then(response=>response.json())
+// // .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
 // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
 //    .then(( data)=>{
 //        for (let i=0; i <= 138; i++) {
 //         let index="";
-//             //  index += console.log(data.PER.indicators[i].indicatorName );             
-//            //  index += document.getElementById("text-area").innerHTML+=
-//            document.getElementById("textArea").innerHTML+=
-//              (data.PER.indicators[i].indicatorName );
-            
+//             //  index += console.log(data.PER.indicators[i].indicatorName ); 
+//              index = (data.PER.indicators[i].indicatorName ); 
+//              document.getElementById("indicator").innerHTML+=("<option>" + index + "<option>");            
+// //             index += document.getElementById("textArea").innerHTML+=
+// //            document.getElementById("text-area").innerHTML+=
+// //              (data.PER.indicators[i].indicatorName );
+           
                
 //      }
 //     }
 //    )
-
-fetch('./data/worldbank/worldbank.json')
-.then(response=>response.json())
-   .then(( data)=>{
-      
-        let index1="";
-             index1= (data.PER.indicators["17"].data); 
-             console.log(Object.keys(index1));              
-           
-    }
-   )
-
-   fetch('./data/worldbank/worldbank.json')
-.then(response=>response.json())
-   .then(( data)=>{
-      
-        let index="";
-             index = (data); 
-             console.log(Object.keys(index));              
-           
-    }
-   )
-
-
-   fetch('./data/worldbank/worldbank.json')
-.then(response=>response.json())
-// .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
-// .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
-   .then(( data)=>{
-       for (let i=0; i <= 138; i++) {
-        let index="";
-            //  index += console.log(data.PER.indicators[i].indicatorName ); 
-             index = (data.PER.indicators[i].indicatorName ); 
-             document.getElementById("indicator").innerHTML+=("<option>" + index + "<option>");            
-//             index += document.getElementById("textArea").innerHTML+=
-//            document.getElementById("text-area").innerHTML+=
-//              (data.PER.indicators[i].indicatorName );
-           
-               
-     }
-    }
-   )
 
 
 
  
   
 
-  fetch('./data/worldbank/worldbank.json')
-  .then(response=>response.json())
-  .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
-  // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
-  //    .then(( data)=>{
-  //        for (let x=0; x <= 57; x++) {
-  //         let year= 1960;
-  //         document.getElementById("year").innerHTML+=("<option>" + year + "<option>"); 
+//   fetch('./data/worldbank/worldbank.json')
+//   .then(response=>response.json())
+//   .then(data=>console.log(data.PER.indicators["17"].data["1990"]));
+//   // // .then(data=>console.log(data.PER.indicators["17"].indicatorName ));
+//   //    .then(( data)=>{
+//   //        for (let x=0; x <= 57; x++) {
+//   //         let year= 1960;
+//   //         document.getElementById("year").innerHTML+=("<option>" + year + "<option>"); 
          
                
-  //              console.log(year+x);            
+//   //              console.log(year+x);            
                           
-    //               }
-    //   }
-    //  )
+//     //               }
+//     //   }
+//     //  )
 
-      // fetch('./data/worldbank/worldbank.json')
-      // .then(response=>response.json())
-      // .then(data=>console.log(data.PER.indicators[]data["1990"]));
+//       // fetch('./data/worldbank/worldbank.json')
+//       // .then(response=>response.json())
+//       // .then(data=>console.log(data.PER.indicators[]data["1990"]));
 
-   function genera_tabla() {
-       var body = document.getElementsByTagName("textArea")[0];
-        var tabla   = document.createElement("table");
-    var tblBody = document.createElement("tbody");
+//    function genera_tabla() {
+//        var body = document.getElementsByTagName("textArea")[0];
+//         var tabla   = document.createElement("table");
+//     var tblBody = document.createElement("tbody");
    
-    for (let ind = 0; ind < 13; ind++) {
-         var hilera = document.createElement("tr");
+//     for (let ind = 0; ind < 13; ind++) {
+//          var hilera = document.createElement("tr");
    
-      for (var j = 0; j < 2; j++) {
-            var celda = document.createElement("td");
-        var textoCelda = document.createTextNode("celda en la hilera  columna "+j);
-        celda.appendChild(textoCelda);
-        hilera.appendChild(celda);
-      }
+//       for (var j = 0; j < 2; j++) {
+//             var celda = document.createElement("td");
+//         var textoCelda = document.createTextNode("celda en la hilera  columna "+j);
+//         celda.appendChild(textoCelda);
+//         hilera.appendChild(celda);
+//       }
    
-        tblBody.appendChild(hilera);
-    }
+//         tblBody.appendChild(hilera);
+//     }
    
     
-    tabla.appendChild(tblBody);
+//     tabla.appendChild(tblBody);
    
-    body.appendChild(tabla);
-    tabla.setAttribute("border", "2");
+//     body.appendChild(tabla);
+//     tabla.setAttribute("border", "2");
     
-  }
+//   }
 
 
 
@@ -126,7 +126,7 @@ fetch('./data/worldbank/worldbank.json')
 // fetch('./data/worldbank/worldbank.json')
 // .then(response=>response.json())
 
-// // .then(data=>console.log(data.PER.indicators["17"]));
+// .then(data=>console.log(data.PER.indicators["17"]));
 
 // let datos = JSON.parse(this.responseText);
 // for (let item of datos){
@@ -146,12 +146,12 @@ fetch('./data/worldbank/worldbank.json')
 //     })
 //     .then(function(data){
 //         console.log(data.PER.indicators['17']);
-//         // let html="";
-//         // data.forEach(function(pais) {
-//         //    html += "<li>${data.PER} </li> ";
-//         // })
-//         //     document.getElementById("resultado").innerHTML=html;
-//     })
+//     //     // let html="";
+//     //     // data.forEach(function(pais) {
+//     //     //    html += "<li>${data.PER} </li> ";
+//     //     // })
+//     //     //     document.getElementById("resultado").innerHTML=html;
+//     // })
 // }
 // output+=
 // '
@@ -174,25 +174,25 @@ fetch('./data/worldbank/worldbank.json')
 //     });
 
 // }
-select.addEventListener('change', e=>{
-  let value = e.target.value
-  h3.innerText = value
-  let country=value
+// select.addEventListener('change', e=>{
+//   let value = e.target.value
+//   h3.innerText = value
+//   let country=value
 
-  fetch('./data/worldbank/worldbank.json')
-  .then(response=>response.json())
-  .then(data=>console.log((data[country].indicators["17"].data["1990"])));
+//   fetch('./data/worldbank/worldbank.json')
+//   .then(response=>response.json())
+//   .then(data=>console.log((data[country].indicators["17"].data["1990"])));
     
-})
+// })
 
-selectI.addEventListener('change', e=>{
-  let valueI = e.target.value
-  h3.innerText = valueI
-  let indic=valueI
+// selectI.addEventListener('change', e=>{
+//   let valueI = e.target.value
+//   h3.innerText = valueI
+//   let indic=valueI
 
-  fetch('./data/worldbank/worldbank.json')
-  .then(response=>response.json())
-  .then(data=>console.log((data[country].indicators[indic].data["1990"])));
+//   fetch('./data/worldbank/worldbank.json')
+//   .then(response=>response.json())
+//   .then(data=>console.log((data[country].indicators[indic].data["1990"])));
     
-})
+// })
  

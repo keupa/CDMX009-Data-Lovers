@@ -1,11 +1,15 @@
 body{
   background-color: #FFF;
+<<<<<<< HEAD
   font-family: Arial, Helvetica, sans-serif;
+=======
+>>>>>>> d5fe10246d7b7a3e49874976950ce087dd2a001a
 }
 
 .container{
 }
 
+<<<<<<< HEAD
 .country-modal{
 position: fixed;
 background-color: #00AEEF;
@@ -63,6 +67,8 @@ border-radius: 3px;
   pointer-events: all;
 }
 
+=======
+>>>>>>> d5fe10246d7b7a3e49874976950ce087dd2a001a
 .footer{
   position: fixed;
   left: 0;

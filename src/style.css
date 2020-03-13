@@ -1,9 +1,6 @@
 body{
   background-color: #FFF;
-<<<<<<< HEAD
   font-family: Arial, Helvetica, sans-serif;
-=======
->>>>>>> d5fe10246d7b7a3e49874976950ce087dd2a001a
 }
 
 .container{
@@ -43,11 +40,17 @@ border-radius: 3px;
   padding-top: 20px;
 }
 
-.table{
-  background-color: #657896;
-  width: 300px;
-  height: 150px;
-  padding: 30px; 
+table{
+  display:flex;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 9px;
+}
+
+th{
+  font-weight: bold;
 }
 
 #overlay{
@@ -67,8 +70,6 @@ border-radius: 3px;
   pointer-events: all;
 }
 
-=======
->>>>>>> d5fe10246d7b7a3e49874976950ce087dd2a001a
 .footer{
   position: fixed;
   left: 0;

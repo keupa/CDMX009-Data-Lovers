@@ -98,3 +98,5 @@ Se crearon tres historias de usuario que se desarrollaron a través de tres spri
 1. El usuario podrá desplegar y escoger a través de un <select>, la lista de países y el indicador deseado. Se desplegará la información de los años y porcentaje en una tabla.                                                                                                                                                                                                                                          . 2. El usuario podrá seleccionar un país, un indicador y distintos años a través de ventanas modales. Posteriormente se desplegará la información sólo de los años elegidos en una tabla HTML. El usuario podrá seleccionar un país, un indicador y distintos años a través de ventanas modales. Además podrá elegir entre desplegar la información en una tabla o gráfica.
   
  3. El usuario podrá seleccionar un país, un indicador y distintos años a través de ventanas modales. Además podrá elegir entre desplegar la información en una tabla o gráfica.
+ 
+## 4. :)

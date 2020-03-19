@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -15,7 +16,10 @@
         <div class='logo-img'></div>
 
         <div class='options-container'>
-          <div class='place-icon'>
+          <div class='country-icon'>
+            <button data-modal-target='#modal' class='country-btn'> </button>
+          </div>
+        <!--  <div class='place-icon'>
             <select class='select' id='countrySelect'>
             <option selected disabled>PAÍS</option>
             <option class='country' value='BRA'>Brasil</option>
@@ -25,13 +29,45 @@
             </select>
 
           </div>
-
+-->
           <div class='indicator-icon'>
-            <select style='width:200px' id='indicatorSelect' class='select'>
+            <select style='width:10px' id='indicatorSelect' class='select'>
             <option selected disabled>INDICADOR</option>
             </select>
           </div>
         </div>
+
+        <!-- Modal Pop-Up Section -->
+        <div class='modal' id='modal'>
+          <div class='modal-header'>
+            <div class='modal-title'></div>
+          </div>
+
+          <div class='modal-body'>
+
+            <form action='' class='form'>
+
+              <div class='radio'>
+              <input id='brasil' type='radio' value='BRA'/>
+              <label for='brasil'> Brasil </label>
+
+              <input id='chile' type='radio' value='CHL'/>
+              <label for='chile'> Chile </label>
+
+              <input id='mexico' type='radio' value='MEX'/>
+              <label for='mexico'> México </label>
+
+              <input id='peru' type='radio' value='PER'/>
+              <label for='peru'> Peru </label>
+              </div>
+
+          </form>
+
+          </div>
+          <button data-close-button id='close-button' class='close-button'>Done</button>
+        </div>
+
+
 
         <div class='tables' id='fillTable'>
           <table>
@@ -57,7 +93,7 @@
 
         </div>
 
-
+<div id='overlay' > </div>
 
 
 

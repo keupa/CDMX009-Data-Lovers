@@ -1,64 +1,69 @@
-// 1.- importamos la Data
-import data from './data/worldbank/worldbank.js'
+let countrySelect = document.querySelector('#countrySelect')
+let indiSelect = document.querySelector('#indicatorSelect')
+let yearSelect = document.querySelector('#yearSelect')
+let sortDirection = false
+let tableData = []
+let tableBody = document.querySelector('#tableData')
+let tableBodyP = document.querySelector('#tableDataP')
 
-//5.- Guardamos en variables globales
+//variables globales
 let country
-let val=0
-// let indi2
-// 2.- selectores (nodos)
-let select = document.querySelector('#cText')
-let indiSelect = document.querySelector('#indicator')
-let yearSelect = document.querySelector('#year')
+let indicator
+let year
+let findIndicator
+let percent
 
-//4.- funciones callback
-function onChange(event){
-  let value = event.target.value
+//funciones
+function onChange(e) {
+  let value = e.target.value
   country = value
-  let indi = data[value].indicators
-  console.log(indi)
+  let indi = data[country].indicators
   setOptions(indi)
+  document.getElementById("tittle").innerHTML = country;
+  console.log(country)
 }
 
-function onChange1(event1){
-  let value1 = event1.target.value
-  let indicator = value1
-  console.log(indicator)
-    // indiucador hay filtrar con ase al indicador
-  let indicador = data[country].indicators.find(obj=>obj.indicatorName===indicator)
-  setOptionsY(Object.keys(indicador.data))
-  console.log(Object.values(indicador.data))
-
-}
-
-
-
-
-
-//6.- funcion para colocar options en el select de indicator
-function setOptions(list){
+function setOptions(list) {
   list.forEach(i=>{
-    //a.- creamos el option
     let option = document.createElement('option')
-    option.label =i.indicatorName
-    option.value=i.indicatorName
-    val=(Object.keys(i.data))  
+    option.value = i.indicatorName
+    option.label = i.indicatorName
     indiSelect.appendChild(option)
-    // yearSelect.appendChild(option)
-
-  })
-}
-function setOptionsY(listY){
-  console.log(listY)
-  listY.forEach(val=>{
-    let optionY = document.createElement('option')
-    optionY.label =val
-    optionY.value=val      
-    yearSelect.appendChild(optionY)
-  
   })
 }
 
-// 3.- listener
-select.addEventListener('change', onChange)
-// yearSelect.addEventListener('change', onChange1)
-indiSelect.addEventListener('change', onChange1)
+function indiOnChange(e){
+let value = e.target.value
+indicator = value
+findIndicator = data[country].indicators.find(obj=>obj.indicatorName === indicator)
+let years = Object.keys(findIndicator.data)
+let percent = Object.values(findIndicator.data)
+document.getElementById("indicatorname").innerHTML = indicator; 
+
+loadYears(years)
+loadPercent(percent)
+console.log(indicator)
+}
+
+function loadYears (list) {
+list.forEach(i=>{
+  let tr = document.createElement('TR')
+  tr.innerText = i
+  tableBody.appendChild(tr)
+  console.log(i)
+})
+}
+
+function loadPercent (list) {
+list.forEach(i=>{
+  let tr = document.createElement('TR')
+  tr.innerText = i
+  tableBodyP.appendChild(tr)
+  console.log(i)
+
+
+//listeners
+countrySelect.addEventListener('change', onChange)
+indiSelect.addEventListener('change', indiOnChange)
+indiSelect.addEventListener('change', printRows)
+yearSelect.addEventListener('change', yearOnChange)
